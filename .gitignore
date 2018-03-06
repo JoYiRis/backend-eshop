@@ -1,0 +1,13 @@
+# IDEs and other miscallaneous files
+*.iml
+*.ipr
+*.iws
+.idea/
+*~
+nbproject
+.rsync_cache
+.DS_Store
+node_modules
+build
+yarn.lock
+yarn-error.log
