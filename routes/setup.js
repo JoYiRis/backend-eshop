@@ -1,5 +1,5 @@
 var express = require('express');
-var User = require('../models/User');
+var User = require('./User');
 
 var router = express.Router();
 
@@ -15,13 +15,13 @@ router.get('/', function adminInit(req, res) {
 	admin.save(function createAdmin(err) {
 		if (err) {
 			res.json({
-				success: false,
+				status: 'failed',
 				message: 'Admin create failed'
 			});
 		}
 
 		res.json({
-			success: true,
+			status: 'success',
 			message: 'Admin create success'
 		});
 	});
